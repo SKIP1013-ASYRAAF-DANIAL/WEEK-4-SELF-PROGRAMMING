@@ -1,0 +1,46 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class QuadraticFormula {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double a, b, c;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Solve 2x² - 4x - 30 = 0");
+		System.out.println();
+		
+		System.out.print("Enter value a: ");
+		a = scan.nextInt();
+		System.out.println("The value of a is : " + a);
+		System.out.println();
+		
+		System.out.print("Enter value b: ");
+		b = scan.nextInt();
+		System.out.println("The value of b is : " + b);
+		System.out.println();
+		
+		System.out.print("Enter value c: ");
+		c = scan.nextInt();
+		System.out.println("The value of c is : " + c);
+		System.out.println();
+		
+		double ans1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+		double ans2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+		
+		System.out.println("The answer for x1 is: " + ans1);
+		System.out.println("The answer for x2 is: " + ans2);
+
+		
+		
+		
+
+		
+	}
+	
+}
